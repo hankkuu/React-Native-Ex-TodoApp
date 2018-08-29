@@ -66,7 +66,7 @@ export default class App extends Component {
       console.log(toDos);
       this.setState({
         loadedToDos: true,
-        toDos: parsedToDos
+        toDos: parsedToDos || {}
       });
     } catch(err) {
       console.log(err);
